@@ -1,0 +1,3180 @@
+{
+  "users": [
+    {
+      "email": "abdulalimrakib53@gmail.com",
+      "password": "$2a$10$x6Xyk7/KmbHbDyipmR3.XOnNrN.MSZQfdH0e7DIkASWbMWF89FuRC",
+      "name": "Abdul Alim",
+      "id": 1
+    },
+    {
+      "email": "one@gmail.com",
+      "password": "$2a$10$TUgkKT0IlZ8wwLVQAWiwn.4DOoatWcS4sDwAx.VTC6bv18v4thjTS",
+      "name": "One",
+      "id": 2
+    },
+    {
+      "email": "reco@gmail.com",
+      "password": "$2a$10$s52dFzAjrSYpN/F2VgVizeQKRfB9YKZUAEP8/UF8C1Gn.esnpdsCO",
+      "name": "reco",
+      "id": 3
+    },
+    {
+      "email": "two@gmail.com",
+      "password": "$2a$10$leW4/1BW7aAJFkM81FSlBursu4XIgsVNVOnygX30vEC1oK5yVuyEq",
+      "name": "two",
+      "id": 4
+    }
+  ],
+  "modules": [
+    {
+      "name": "Module One",
+      "author": "abdulalimrakib53@gmail.com",
+      "authorName": "Abdul Alim",
+      "id": 1
+    },
+    {
+      "name": "Module Two",
+      "author": "abdulalimrakib53@gmail.com",
+      "authorName": "Abdul Alim",
+      "id": 2
+    },
+    {
+      "name": "Module Three",
+      "author": "abdulalimrakib53@gmail.com",
+      "authorName": "Abdul Alim",
+      "id": 3
+    },
+    {
+      "name": "Module Four",
+      "author": "abdulalimrakib53@gmail.com",
+      "authorName": "Abdul Alim",
+      "id": 4
+    },
+    {
+      "name": "Module Five",
+      "author": "abdulalimrakib53@gmail.com",
+      "authorName": "Abdul Alim",
+      "id": 5
+    },
+    {
+      "name": "Module Six",
+      "author": "abdulalimrakib53@gmail.com",
+      "authorName": "Abdul Alim",
+      "id": 6
+    },
+    {
+      "name": "Module Seven",
+      "author": "abdulalimrakib53@gmail.com",
+      "authorName": "Abdul Alim",
+      "id": 7
+    },
+    {
+      "name": "Module Eight",
+      "author": "abdulalimrakib53@gmail.com",
+      "authorName": "Abdul Alim",
+      "id": 8
+    },
+    {
+      "name": "Module Nine",
+      "author": "abdulalimrakib53@gmail.com",
+      "authorName": "Abdul Alim",
+      "id": 9
+    },
+    {
+      "name": "Module Ten",
+      "author": "abdulalimrakib53@gmail.com",
+      "authorName": "Abdul Alim",
+      "id": 10
+    },
+    {
+      "name": "Module Eleven",
+      "author": "abdulalimrakib53@gmail.com",
+      "authorName": "Abdul Alim",
+      "id": 11
+    },
+    {
+      "name": "Module Twelve",
+      "author": "abdulalimrakib53@gmail.com",
+      "authorName": "Abdul Alim",
+      "id": 12
+    }
+  ],
+  "questions": [
+    {
+      "title": "What's the output?",
+      "moduleId": 1,
+      "code": "function sayHi() {\n  console.log(name);\n  console.log(age);\n  var name = 'Lydia';\n  let age = 21;\n}\n\nsayHi();",
+      "options": [
+        {
+          "value": "Lydia and undefined"
+        },
+        {
+          "value": "Lydia and ReferenceError"
+        },
+        {
+          "value": "ReferenceError and 21"
+        },
+        {
+          "value": "undefined and ReferenceError"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 1,
+      "code": "for (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1);\n}\n\nfor (let i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1);\n}",
+      "options": [
+        {
+          "value": "0 1 2 and 0 1 2"
+        },
+        {
+          "value": "0 1 2 and 3 3 3"
+        },
+        {
+          "value": "3 3 3 and 0 1 2"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 1,
+      "code": "const shape = {\n  radius: 10,\n  diameter() {\n    return this.radius * 2;\n  },\n  perimeter: () => 2 * Math.PI * this.radius,\n};\n\nconsole.log(shape.diameter());\nconsole.log(shape.perimeter());",
+      "options": [
+        {
+          "value": "20 and 62.83185307179586"
+        },
+        {
+          "value": "20 and NaN"
+        },
+        {
+          "value": "20 and 63"
+        },
+        {
+          "value": "NaN and 63"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 1,
+      "code": "+true;\n!'Lydia';",
+      "options": [
+        {
+          "value": "1 and false"
+        },
+        {
+          "value": "false and NaN"
+        },
+        {
+          "value": "false and false"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "title": "Which one is true?",
+      "moduleId": 1,
+      "code": "const bird = {\n  size: 'small',\n};\n\nconst mouse = {\n  name: 'Mickey',\n  small: true,\n};",
+      "options": [
+        {
+          "value": "mouse.bird.size is not valid"
+        },
+        {
+          "value": "mouse[bird.size] is not valid"
+        },
+        {
+          "value": "mouse[bird[\"size\"]] is not valid"
+        },
+        {
+          "value": "All of them are valid"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 2,
+      "code": "let c = { greeting: 'Hey!' };\nlet d;\n\nd = c;\nc.greeting = 'Hello';\nconsole.log(d.greeting);",
+      "options": [
+        {
+          "value": "Hello"
+        },
+        {
+          "value": "Hey!"
+        },
+        {
+          "value": "undefined"
+        },
+        {
+          "value": "ReferenceError"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 2,
+      "code": "let a = 3;\nlet b = new Number(3);\nlet c = 3;\n\nconsole.log(a == b);\nconsole.log(a === b);\nconsole.log(b === c);",
+      "options": [
+        {
+          "value": "true false true"
+        },
+        {
+          "value": "false false true"
+        },
+        {
+          "value": "true false false"
+        },
+        {
+          "value": "false true true"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 2,
+      "code": "class Chameleon {\n  static colorChange(newColor) {\n    this.newColor = newColor;\n    return this.newColor;\n  }\n\n  constructor({ newColor = 'green' } = {}) {\n    this.newColor = newColor;\n  }\n}\n\nconst freddie = new Chameleon({ newColor: 'purple' });\nconsole.log(freddie.colorChange('orange'));",
+      "options": [
+        {
+          "value": "orange"
+        },
+        {
+          "value": "purple"
+        },
+        {
+          "value": "green"
+        },
+        {
+          "value": "TypeError"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "title": " What's the output?",
+      "moduleId": 2,
+      "code": "let greeting;\ngreetign = {}; // Typo!\nconsole.log(greetign);",
+      "options": [
+        {
+          "value": "{}"
+        },
+        {
+          "value": "ReferenceError: greetign is not defined"
+        },
+        {
+          "value": "undefined"
+        }
+      ],
+      "id": 9
+    },
+    {
+      "title": "What happens when we do this?",
+      "moduleId": 2,
+      "code": "function bark() {\n  console.log('Woof!');\n}\n\nbark.animal = 'dog';",
+      "options": [
+        {
+          "value": "Nothing, this is totally fine!"
+        },
+        {
+          "value": "SyntaxError. You cannot add properties to a function this way."
+        },
+        {
+          "value": "\"Woof\" gets logged."
+        },
+        {
+          "value": "ReferenceError"
+        }
+      ],
+      "id": 10
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 3,
+      "code": "function Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst member = new Person('Lydia', 'Hallie');\nPerson.getFullName = function() {\n  return `${this.firstName} ${this.lastName}`;\n};\n\nconsole.log(member.getFullName());",
+      "options": [
+        {
+          "value": "TypeError"
+        },
+        {
+          "value": "SyntaxError"
+        },
+        {
+          "value": "Lydia Hallie"
+        },
+        {
+          "value": "undefined undefined"
+        }
+      ],
+      "id": 11
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 3,
+      "code": "function Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst lydia = new Person('Lydia', 'Hallie');\nconst sarah = Person('Sarah', 'Smith');\n\nconsole.log(lydia);\nconsole.log(sarah);",
+      "options": [
+        {
+          "value": "Person {firstName: \"Lydia\", lastName: \"Hallie\"} and undefined"
+        },
+        {
+          "value": "Person {firstName: \"Lydia\", lastName: \"Hallie\"} and Person {firstName: \"Sarah\", lastName: \"Smith\"}"
+        },
+        {
+          "value": "Person {firstName: \"Lydia\", lastName: \"Hallie\"} and {}"
+        },
+        {
+          "value": "Person {firstName: \"Lydia\", lastName: \"Hallie\"} and ReferenceError"
+        }
+      ],
+      "id": 12
+    },
+    {
+      "title": "What are the three phases of event propagation?",
+      "moduleId": 3,
+      "code": "",
+      "options": [
+        {
+          "value": "Target > Capturing > Bubbling"
+        },
+        {
+          "value": "Bubbling > Target > Capturing"
+        },
+        {
+          "value": "Target > Bubbling > Capturing"
+        },
+        {
+          "value": "Capturing > Target > Bubbling"
+        }
+      ],
+      "id": 13
+    },
+    {
+      "title": "All object have prototypes.",
+      "moduleId": 3,
+      "code": "",
+      "options": [
+        {
+          "value": " true"
+        },
+        {
+          "value": "false"
+        }
+      ],
+      "id": 14
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 3,
+      "code": "function sum(a, b) {\n  return a + b;\n}\n\nsum(1, '2');",
+      "options": [
+        {
+          "value": "NaN"
+        },
+        {
+          "value": "TypeError"
+        },
+        {
+          "value": "\"12\""
+        },
+        {
+          "value": "3"
+        }
+      ],
+      "id": 15
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 4,
+      "code": "let number = 0;\nconsole.log(number++);\nconsole.log(++number);\nconsole.log(number);",
+      "options": [
+        {
+          "value": "1 1 2"
+        },
+        {
+          "value": "1 2 2"
+        },
+        {
+          "value": "0 2 2"
+        },
+        {
+          "value": "0 1 2"
+        }
+      ],
+      "id": 16
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 4,
+      "code": "function getPersonInfo(one, two, three) {\n  console.log(one);\n  console.log(two);\n  console.log(three);\n}\n\nconst person = 'Lydia';\nconst age = 21;\n\ngetPersonInfo`${person} is ${age} years old`;",
+      "options": [
+        {
+          "value": "\"Lydia\" 21 [\"\", \" is \", \" years old\"]"
+        },
+        {
+          "value": "[\"\", \" is \", \" years old\"] \"Lydia\" 21"
+        },
+        {
+          "value": "\"Lydia\" [\"\", \" is \", \" years old\"] 21"
+        }
+      ],
+      "id": 17
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 4,
+      "code": "function checkAge(data) {\n  if (data === { age: 18 }) {\n    console.log('You are an adult!');\n  } else if (data == { age: 18 }) {\n    console.log('You are still an adult.');\n  } else {\n    console.log(`Hmm.. You don't have an age I guess`);\n  }\n}\n\ncheckAge({ age: 18 });",
+      "options": [
+        {
+          "value": "You are an adult!"
+        },
+        {
+          "value": "You are still an adult."
+        },
+        {
+          "value": "Hmm.. You don't have an age I guess"
+        }
+      ],
+      "id": 18
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 4,
+      "code": "function getAge(...args) {\n  console.log(typeof args);\n}\n\ngetAge(21);",
+      "options": [
+        {
+          "value": "\"number\""
+        },
+        {
+          "value": "\"array\""
+        },
+        {
+          "value": "\"object\""
+        },
+        {
+          "value": "\"NaN\""
+        }
+      ],
+      "id": 19
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 4,
+      "code": "function getAge() {\n  'use strict';\n  age = 21;\n  console.log(age);\n}\n\ngetAge();",
+      "options": [
+        {
+          "value": "21"
+        },
+        {
+          "value": "undefined"
+        },
+        {
+          "value": "ReferenceError"
+        },
+        {
+          "value": "TypeError"
+        }
+      ],
+      "id": 20
+    },
+    {
+      "title": "What's the value of sum?",
+      "moduleId": 5,
+      "code": "const sum = eval('10*10+5');",
+      "options": [
+        {
+          "value": "105"
+        },
+        {
+          "value": "\"105\""
+        },
+        {
+          "value": "TypeError"
+        },
+        {
+          "value": "\"10*10+5\""
+        }
+      ],
+      "id": 21
+    },
+    {
+      "title": "How long is cool_secret accessible?",
+      "moduleId": 5,
+      "code": "sessionStorage.setItem('cool_secret', 123);",
+      "options": [
+        {
+          "value": "Forever, the data doesn't get lost."
+        },
+        {
+          "value": "When the user closes the tab."
+        },
+        {
+          "value": "When the user closes the entire browser, not only the tab."
+        },
+        {
+          "value": "When the user shuts off their computer."
+        }
+      ],
+      "id": 22
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 5,
+      "code": "var num = 8;\nvar num = 10;\n\nconsole.log(num);",
+      "options": [
+        {
+          "value": "8"
+        },
+        {
+          "value": "10"
+        },
+        {
+          "value": "SyntaxError"
+        },
+        {
+          "value": "ReferenceError"
+        }
+      ],
+      "id": 23
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 5,
+      "code": "const obj = { 1: 'a', 2: 'b', 3: 'c' };\nconst set = new Set([1, 2, 3, 4, 5]);\n\nobj.hasOwnProperty('1');\nobj.hasOwnProperty(1);\nset.has('1');\nset.has(1);",
+      "options": [
+        {
+          "value": "false true false true"
+        },
+        {
+          "value": "false true true true"
+        },
+        {
+          "value": "true true false true"
+        },
+        {
+          "value": "true true true true"
+        }
+      ],
+      "id": 24
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 5,
+      "code": "const obj = { a: 'one', b: 'two', a: 'three' };\nconsole.log(obj);",
+      "options": [
+        {
+          "value": "{ a: \"one\", b: \"two\" }"
+        },
+        {
+          "value": "{ b: \"two\", a: \"three\" }"
+        },
+        {
+          "value": "{ a: \"three\", b: \"two\" }"
+        },
+        {
+          "value": "SyntaxError"
+        }
+      ],
+      "id": 25
+    },
+    {
+      "title": "The JavaScript global execution context creates two things for you: the global object, and the \"this\" keyword.",
+      "moduleId": 6,
+      "code": "",
+      "options": [
+        {
+          "value": "true"
+        },
+        {
+          "value": "false"
+        },
+        {
+          "value": "it depends"
+        }
+      ],
+      "id": 26
+    },
+    {
+      "title": " What's the output?",
+      "moduleId": 6,
+      "code": "for (let i = 1; i < 5; i++) {\n  if (i === 3) continue;\n  console.log(i);\n}",
+      "options": [
+        {
+          "value": "1 2"
+        },
+        {
+          "value": "1 2 3"
+        },
+        {
+          "value": "1 2 4"
+        },
+        {
+          "value": "1 3 4"
+        }
+      ],
+      "id": 27
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 6,
+      "code": "String.prototype.giveLydiaPizza = () => {\n  return 'Just give Lydia pizza already!';\n};\n\nconst name = 'Lydia';\n\nconsole.log(name.giveLydiaPizza())",
+      "options": [
+        {
+          "value": "\"Just give Lydia pizza already!\""
+        },
+        {
+          "value": "TypeError: not a function"
+        },
+        {
+          "value": "SyntaxError"
+        },
+        {
+          "value": "undefined"
+        }
+      ],
+      "id": 28
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 6,
+      "code": "const a = {};\nconst b = { key: 'b' };\nconst c = { key: 'c' };\n\na[b] = 123;\na[c] = 456;\n\nconsole.log(a[b]);",
+      "options": [
+        {
+          "value": "123"
+        },
+        {
+          "value": "456"
+        },
+        {
+          "value": "undefined"
+        },
+        {
+          "value": "ReferenceError"
+        }
+      ],
+      "id": 29
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 6,
+      "code": "const foo = () => console.log('First');\nconst bar = () => setTimeout(() => console.log('Second'));\nconst baz = () => console.log('Third');\n\nbar();\nfoo();\nbaz();",
+      "options": [
+        {
+          "value": "First Second Third"
+        },
+        {
+          "value": "First Third Second"
+        },
+        {
+          "value": "Second First Third"
+        },
+        {
+          "value": "Second Third First"
+        }
+      ],
+      "id": 30
+    },
+    {
+      "title": "What is the event.target when clicking the button?",
+      "moduleId": 7,
+      "code": "<div onclick=\"console.log('first div')\">\n  <div onclick=\"console.log('second div')\">\n    <button onclick=\"console.log('button')\">\n      Click!\n    </button>\n  </div>\n</div>",
+      "options": [
+        {
+          "value": "Outer div"
+        },
+        {
+          "value": "Inner div"
+        },
+        {
+          "value": "button"
+        },
+        {
+          "value": "An array of all nested elements."
+        }
+      ],
+      "id": 31
+    },
+    {
+      "title": "When you click the paragraph, what's the logged output?",
+      "moduleId": 7,
+      "code": "<div onclick=\"console.log('div')\">\n  <p onclick=\"console.log('p')\">\n    Click here!\n  </p>\n</div>",
+      "options": [
+        {
+          "value": "p div"
+        },
+        {
+          "value": "div p"
+        },
+        {
+          "value": "p"
+        },
+        {
+          "value": "div"
+        }
+      ],
+      "id": 32
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 7,
+      "code": "const person = { name: 'Lydia' };\n\nfunction sayHi(age) {\n  return `${this.name} is ${age}`;\n}\n\nconsole.log(sayHi.call(person, 21));\nconsole.log(sayHi.bind(person, 21));",
+      "options": [
+        {
+          "value": "undefined is 21 Lydia is 21"
+        },
+        {
+          "value": "function function"
+        },
+        {
+          "value": "Lydia is 21 Lydia is 21"
+        },
+        {
+          "value": "Lydia is 21 function"
+        }
+      ],
+      "id": 33
+    },
+    {
+      "title": " What's the output?",
+      "moduleId": 7,
+      "code": "function sayHi() {\n  return (() => 0)();\n}\n\nconsole.log(typeof sayHi());",
+      "options": [
+        {
+          "value": "\"object\""
+        },
+        {
+          "value": "\"number\""
+        },
+        {
+          "value": "\"function\""
+        },
+        {
+          "value": "\"undefined\""
+        }
+      ],
+      "id": 34
+    },
+    {
+      "title": "Which of these values are falsy?",
+      "moduleId": 7,
+      "code": "0;\nnew Number(0);\n('');\n(' ');\nnew Boolean(false);\nundefined;",
+      "options": [
+        {
+          "value": "0, '', undefined"
+        },
+        {
+          "value": "0, new Number(0), '', new Boolean(false), undefined"
+        },
+        {
+          "value": "0, '', new Boolean(false), undefined"
+        },
+        {
+          "value": "All of them are falsy"
+        }
+      ],
+      "id": 35
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 8,
+      "code": "console.log(typeof typeof 1);",
+      "options": [
+        {
+          "value": "\"number\""
+        },
+        {
+          "value": "\"string\""
+        },
+        {
+          "value": "\"object\""
+        },
+        {
+          "value": "\"undefined\""
+        }
+      ],
+      "id": 36
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 8,
+      "code": "const numbers = [1, 2, 3];\nnumbers[10] = 11;\nconsole.log(numbers);",
+      "options": [
+        {
+          "value": "[1, 2, 3, null x 7, 11]"
+        },
+        {
+          "value": "[1, 2, 3, 11]"
+        },
+        {
+          "value": "[1, 2, 3, empty x 7, 11]"
+        },
+        {
+          "value": "SyntaxError"
+        }
+      ],
+      "id": 37
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 8,
+      "code": "(() => {\n  let x, y;\n  try {\n    throw new Error();\n  } catch (x) {\n    (x = 1), (y = 2);\n    console.log(x);\n  }\n  console.log(x);\n  console.log(y);\n})();",
+      "options": [
+        {
+          "value": "1 undefined 2"
+        },
+        {
+          "value": "undefined undefined undefined"
+        },
+        {
+          "value": "1 1 2"
+        },
+        {
+          "value": "1 undefined undefine"
+        }
+      ],
+      "id": 38
+    },
+    {
+      "title": "Everything in JavaScript is either a...",
+      "moduleId": 8,
+      "code": "",
+      "options": [
+        {
+          "value": "primitive or object"
+        },
+        {
+          "value": "function or object"
+        },
+        {
+          "value": "trick question! only objects"
+        },
+        {
+          "value": "number or object"
+        }
+      ],
+      "id": 39
+    },
+    {
+      "title": " What's the output?",
+      "moduleId": 8,
+      "code": "[[0, 1], [2, 3]].reduce(\n  (acc, cur) => {\n    return acc.concat(cur);\n  },\n  [1, 2],\n);",
+      "options": [
+        {
+          "value": "[0, 1, 2, 3, 1, 2]"
+        },
+        {
+          "value": "[6, 1, 2]"
+        },
+        {
+          "value": "[1, 2, 0, 1, 2, 3]"
+        },
+        {
+          "value": "[1, 2, 6]"
+        }
+      ],
+      "id": 40
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 9,
+      "code": "!!null;\n!!'';\n!!1;",
+      "options": [
+        {
+          "value": "false true false"
+        },
+        {
+          "value": "false false true"
+        },
+        {
+          "value": "false true true"
+        },
+        {
+          "value": "true true false"
+        }
+      ],
+      "id": 41
+    },
+    {
+      "title": "What does the setInterval method return in the browser?",
+      "moduleId": 9,
+      "code": "setInterval(() => console.log('Hi'), 1000);",
+      "options": [
+        {
+          "value": "a unique id"
+        },
+        {
+          "value": "the amount of milliseconds specified"
+        },
+        {
+          "value": "the passed function"
+        },
+        {
+          "value": "undefined"
+        }
+      ],
+      "id": 42
+    },
+    {
+      "title": "What does this return?",
+      "moduleId": 9,
+      "code": "[...'Lydia'];",
+      "options": [
+        {
+          "value": "[\"L\", \"y\", \"d\", \"i\", \"a\"]"
+        },
+        {
+          "value": "[\"Lydia\"]"
+        },
+        {
+          "value": "[[], \"Lydia\"]"
+        },
+        {
+          "value": "[[\"L\", \"y\", \"d\", \"i\", \"a\"]]"
+        }
+      ],
+      "id": 43
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 9,
+      "code": "function* generator(i) {\n  yield i;\n  yield i * 2;\n}\n\nconst gen = generator(10);\n\nconsole.log(gen.next().value);\nconsole.log(gen.next().value);",
+      "options": [
+        {
+          "value": "[0, 10], [10, 20]"
+        },
+        {
+          "value": "20, 20"
+        },
+        {
+          "value": "10, 20"
+        },
+        {
+          "value": "0, 10 and 10, 20"
+        }
+      ],
+      "id": 44
+    },
+    {
+      "title": "What does this return?",
+      "moduleId": 9,
+      "code": "const firstPromise = new Promise((res, rej) => {\n  setTimeout(res, 500, 'one');\n});\n\nconst secondPromise = new Promise((res, rej) => {\n  setTimeout(res, 100, 'two');\n});\n\nPromise.race([firstPromise, secondPromise]).then(res => console.log(res));",
+      "options": [
+        {
+          "value": "\"one\""
+        },
+        {
+          "value": "\"two\""
+        },
+        {
+          "value": "\"two\" \"one\""
+        },
+        {
+          "value": "\"one\" \"two\""
+        }
+      ],
+      "id": 45
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 10,
+      "code": "let person = { name: 'Lydia' };\nconst members = [person];\nperson = null;\n\nconsole.log(members);",
+      "options": [
+        {
+          "value": "null"
+        },
+        {
+          "value": "[null]"
+        },
+        {
+          "value": "[{}]"
+        },
+        {
+          "value": "[{ name: \"Lydia\" }]"
+        }
+      ],
+      "id": 46
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 10,
+      "code": "const person = {\n  name: 'Lydia',\n  age: 21,\n};\n\nfor (const item in person) {\n  console.log(item);\n}",
+      "options": [
+        {
+          "value": "{ name: \"Lydia\" }, { age: 21 }"
+        },
+        {
+          "value": "\"name\", \"age\""
+        },
+        {
+          "value": "\"Lydia\", 21"
+        },
+        {
+          "value": "[\"name\", \"Lydia\"], [\"age\", 21]"
+        }
+      ],
+      "id": 47
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 10,
+      "code": "console.log(3 + 4 + '5');",
+      "options": [
+        {
+          "value": "\"345\""
+        },
+        {
+          "value": "\"75\""
+        },
+        {
+          "value": "12"
+        },
+        {
+          "value": "\"12\""
+        }
+      ],
+      "id": 48
+    },
+    {
+      "title": "What's the value of num?",
+      "moduleId": 10,
+      "code": "const num = parseInt('7*6', 10);",
+      "options": [
+        {
+          "value": "42"
+        },
+        {
+          "value": "\"42\""
+        },
+        {
+          "value": "7"
+        },
+        {
+          "value": "NaN"
+        }
+      ],
+      "id": 49
+    },
+    {
+      "title": " What's the output?",
+      "moduleId": 10,
+      "code": "[1, 2, 3].map(num => {\n  if (typeof num === 'number') return;\n  return num * 2;\n});",
+      "options": [
+        {
+          "value": "[]"
+        },
+        {
+          "value": "[null, null, null]"
+        },
+        {
+          "value": "[undefined, undefined, undefined]"
+        },
+        {
+          "value": "[ 3 x empty ]"
+        }
+      ],
+      "id": 50
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 11,
+      "code": "function getInfo(member, year) {\n  member.name = 'Lydia';\n  year = '1998';\n}\n\nconst person = { name: 'Sarah' };\nconst birthYear = '1997';\n\ngetInfo(person, birthYear);\n\nconsole.log(person, birthYear);",
+      "options": [
+        {
+          "value": "{ name: \"Lydia\" }, \"1997\""
+        },
+        {
+          "value": "{ name: \"Sarah\" }, \"1998\""
+        },
+        {
+          "value": "{ name: \"Lydia\" }, \"1998\""
+        },
+        {
+          "value": "{ name: \"Sarah\" }, \"1997\""
+        }
+      ],
+      "id": 51
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 11,
+      "code": "function greeting() {\n  throw 'Hello world!';\n}\n\nfunction sayHi() {\n  try {\n    const data = greeting();\n    console.log('It worked!', data);\n  } catch (e) {\n    console.log('Oh no an error:', e);\n  }\n}\n\nsayHi();",
+      "options": [
+        {
+          "value": "It worked! Hello world!"
+        },
+        {
+          "value": "Oh no an error: undefined"
+        },
+        {
+          "value": "SyntaxError: can only throw Error objects"
+        },
+        {
+          "value": "Oh no an error: Hello world!"
+        }
+      ],
+      "id": 52
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 11,
+      "code": "function Car() {\n  this.make = 'Lamborghini';\n  return { make: 'Maserati' };\n}\n\nconst myCar = new Car();\nconsole.log(myCar.make);",
+      "options": [
+        {
+          "value": "\"Lamborghini\""
+        },
+        {
+          "value": "\"Maserati\""
+        },
+        {
+          "value": "ReferenceError"
+        },
+        {
+          "value": "TypeError"
+        }
+      ],
+      "id": 53
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 11,
+      "code": "(() => {\n  let x = (y = 10);\n})();\n\nconsole.log(typeof x);\nconsole.log(typeof y);",
+      "options": [
+        {
+          "value": "\"undefined\", \"number\""
+        },
+        {
+          "value": "\"number\", \"number\""
+        },
+        {
+          "value": "\"object\", \"number\""
+        },
+        {
+          "value": "\"number\", \"undefined\""
+        }
+      ],
+      "id": 54
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 11,
+      "code": "class Dog {\n  constructor(name) {\n    this.name = name;\n  }\n}\n\nDog.prototype.bark = function() {\n  console.log(`Woof I am ${this.name}`);\n};\n\nconst pet = new Dog('Mara');\n\npet.bark();\n\ndelete Dog.prototype.bark;\n\npet.bark();",
+      "options": [
+        {
+          "value": "\"Woof I am Mara\", TypeError"
+        },
+        {
+          "value": "\"Woof I am Mara\", \"Woof I am Mara\""
+        },
+        {
+          "value": "\"Woof I am Mara\", undefined"
+        },
+        {
+          "value": "TypeError, TypeError"
+        }
+      ],
+      "id": 55
+    }
+  ],
+  "answers": [
+    {
+      "title": "What's the output?",
+      "moduleId": 1,
+      "code": "function sayHi() {\n  console.log(name);\n  console.log(age);\n  var name = 'Lydia';\n  let age = 21;\n}\n\nsayHi();",
+      "description": "Within the function, we first declare the name variable with the var keyword. This means that the variable gets hoisted (memory space is set up during the creation phase) with the default value of undefined, until we actually get to the line where we define the variable. We haven't defined the variable yet on the line where we try to log the name variable, so it still holds the value of undefined.\n\nVariables with the let keyword (and const) are hoisted, but unlike var, don't get initialized. They are not accessible before the line we declare (initialize) them. This is called the \"temporal dead zone\". When we try to access the variables before they are declared, JavaScript throws a ReferenceError.",
+      "options": [
+        {
+          "value": "Lydia and undefined",
+          "correct": false
+        },
+        {
+          "value": "Lydia and ReferenceError",
+          "correct": false
+        },
+        {
+          "value": "ReferenceError and 21",
+          "correct": false
+        },
+        {
+          "value": "undefined and ReferenceError",
+          "correct": true
+        }
+      ],
+      "id": 1
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 1,
+      "code": "for (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1);\n}\n\nfor (let i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1);\n}",
+      "description": "Because of the event queue in JavaScript, the setTimeout callback function is called after the loop has been executed. Since the variable i in the first loop was declared using the var keyword, this value was global. During the loop, we incremented the value of i by 1 each time, using the unary operator ++. By the time the setTimeout callback function was invoked, i was equal to 3 in the first example.\n\nIn the second loop, the variable i was declared using the let keyword: variables declared with the let (and const) keyword are block-scoped (a block is anything between { }). During each iteration, i will have a new value, and each value is scoped inside the loop.",
+      "options": [
+        {
+          "value": "0 1 2 and 0 1 2",
+          "correct": false
+        },
+        {
+          "value": "0 1 2 and 3 3 3",
+          "correct": false
+        },
+        {
+          "value": "3 3 3 and 0 1 2",
+          "correct": true
+        }
+      ],
+      "id": 2
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 1,
+      "code": "const shape = {\n  radius: 10,\n  diameter() {\n    return this.radius * 2;\n  },\n  perimeter: () => 2 * Math.PI * this.radius,\n};\n\nconsole.log(shape.diameter());\nconsole.log(shape.perimeter());",
+      "description": "Note that the value of diameter is a regular function, whereas the value of perimeter is an arrow function.\n\nWith arrow functions, the this keyword refers to its current surrounding scope, unlike regular functions! This means that when we call perimeter, it doesn't refer to the shape object, but to its surrounding scope (window for example).\n\nThere is no value radius on that object, which returns NaN.",
+      "options": [
+        {
+          "value": "20 and 62.83185307179586",
+          "correct": false
+        },
+        {
+          "value": "20 and NaN",
+          "correct": true
+        },
+        {
+          "value": "20 and 63",
+          "correct": false
+        },
+        {
+          "value": "NaN and 63",
+          "correct": false
+        }
+      ],
+      "id": 3
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 1,
+      "code": "+true;\n!'Lydia';",
+      "description": "The unary plus tries to convert an operand to a number. true is 1, and false is 0.\n\nThe string 'Lydia' is a truthy value. What we're actually asking, is \"is this truthy value falsy?\". This returns false.",
+      "options": [
+        {
+          "value": "1 and false",
+          "correct": true
+        },
+        {
+          "value": "false and NaN",
+          "correct": false
+        },
+        {
+          "value": "false and false",
+          "correct": false
+        }
+      ],
+      "id": 4
+    },
+    {
+      "title": "Which one is true?",
+      "moduleId": 1,
+      "code": "const bird = {\n  size: 'small',\n};\n\nconst mouse = {\n  name: 'Mickey',\n  small: true,\n};",
+      "description": "In JavaScript, all object keys are strings (unless it's a Symbol). Even though we might not type them as strings, they are always converted into strings under the hood.\n\nJavaScript interprets (or unboxes) statements. When we use bracket notation, it sees the first opening bracket [ and keeps going until it finds the closing bracket ]. Only then, it will evaluate the statement.\n\nmouse[bird.size]: First it evaluates bird.size, which is \"small\". mouse[\"small\"] returns true\n\nHowever, with dot notation, this doesn't happen. mouse does not have a key called bird, which means that mouse.bird is undefined. Then, we ask for the size using dot notation: mouse.bird.size. Since mouse.bird is undefined, we're actually asking undefined.size. This isn't valid, and will throw an error similar to Cannot read property \"size\" of undefined.",
+      "options": [
+        {
+          "value": "mouse.bird.size is not valid",
+          "correct": true
+        },
+        {
+          "value": "mouse[bird.size] is not valid",
+          "correct": false
+        },
+        {
+          "value": "mouse[bird[\"size\"]] is not valid",
+          "correct": false
+        },
+        {
+          "value": "All of them are valid",
+          "correct": false
+        }
+      ],
+      "id": 5
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 2,
+      "code": "let c = { greeting: 'Hey!' };\nlet d;\n\nd = c;\nc.greeting = 'Hello';\nconsole.log(d.greeting);",
+      "description": "In JavaScript, all objects interact by reference when setting them equal to each other.\n\nFirst, variable c holds a value to an object. Later, we assign d with the same reference that c has to the object.\nWhen you change one object, you change all of them.",
+      "options": [
+        {
+          "value": "Hello",
+          "correct": true
+        },
+        {
+          "value": "Hey!",
+          "correct": false
+        },
+        {
+          "value": "undefined",
+          "correct": false
+        },
+        {
+          "value": "ReferenceError",
+          "correct": false
+        }
+      ],
+      "id": 6
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 2,
+      "code": "let a = 3;\nlet b = new Number(3);\nlet c = 3;\n\nconsole.log(a == b);\nconsole.log(a === b);\nconsole.log(b === c);",
+      "description": "new Number() is a built-in function constructor. Although it looks like a number, it's not really a number: it has a bunch of extra features and is an object.\n\nWhen we use the == operator, it only checks whether it has the same value. They both have the value of 3, so it returns true.\n\nHowever, when we use the === operator, both value and type should be the same. It's not: new Number() is not a number, it's an object. Both return false.",
+      "options": [
+        {
+          "value": "true false true",
+          "correct": false
+        },
+        {
+          "value": "false false true",
+          "correct": false
+        },
+        {
+          "value": "true false false",
+          "correct": true
+        },
+        {
+          "value": "false true true",
+          "correct": false
+        }
+      ],
+      "id": 7
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 2,
+      "code": "class Chameleon {\n  static colorChange(newColor) {\n    this.newColor = newColor;\n    return this.newColor;\n  }\n\n  constructor({ newColor = 'green' } = {}) {\n    this.newColor = newColor;\n  }\n}\n\nconst freddie = new Chameleon({ newColor: 'purple' });\nconsole.log(freddie.colorChange('orange'));",
+      "description": "The colorChange function is static. Static methods are designed to live only on the constructor in which they are created, and cannot be passed down to any children or called upon class instances. Since freddie is an instance of class Chameleon, the function cannot be called upon it. A TypeError is thrown.",
+      "options": [
+        {
+          "value": "orange",
+          "correct": false
+        },
+        {
+          "value": "purple",
+          "correct": false
+        },
+        {
+          "value": "green",
+          "correct": false
+        },
+        {
+          "value": "TypeError",
+          "correct": true
+        }
+      ],
+      "id": 8
+    },
+    {
+      "title": " What's the output?",
+      "moduleId": 2,
+      "code": "let greeting;\ngreetign = {}; // Typo!\nconsole.log(greetign);",
+      "description": "It logs the object, because we just created an empty object on the global object! When we mistyped greeting as greetign, the JS interpreter actually saw this as global.greetign = {} (or window.greetign = {} in a browser).\n\nIn order to avoid this, we can use \"use strict\". This makes sure that you have declared a variable before setting it equal to anything.",
+      "options": [
+        {
+          "value": "{}",
+          "correct": true
+        },
+        {
+          "value": "ReferenceError: greetign is not defined",
+          "correct": false
+        },
+        {
+          "value": "undefined",
+          "correct": false
+        }
+      ],
+      "id": 9
+    },
+    {
+      "title": "What happens when we do this?",
+      "moduleId": 2,
+      "code": "function bark() {\n  console.log('Woof!');\n}\n\nbark.animal = 'dog';",
+      "description": "This is possible in JavaScript, because functions are objects! (Everything besides primitive types are objects)\n\nA function is a special type of object. The code you write yourself isn't the actual function. The function is an object with properties. This property is invocable.",
+      "options": [
+        {
+          "value": "Nothing, this is totally fine!",
+          "correct": true
+        },
+        {
+          "value": "SyntaxError. You cannot add properties to a function this way.",
+          "correct": false
+        },
+        {
+          "value": "\"Woof\" gets logged.",
+          "correct": false
+        },
+        {
+          "value": "ReferenceError",
+          "correct": false
+        }
+      ],
+      "id": 10
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 3,
+      "code": "function Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst member = new Person('Lydia', 'Hallie');\nPerson.getFullName = function() {\n  return `${this.firstName} ${this.lastName}`;\n};\n\nconsole.log(member.getFullName());",
+      "description": "In JavaScript, functions are objects, and therefore, the method getFullName gets added to the constructor function object itself. For that reason, we can call Person.getFullName(), but member.getFullName throws a TypeError.",
+      "options": [
+        {
+          "value": "TypeError",
+          "correct": true
+        },
+        {
+          "value": "SyntaxError",
+          "correct": false
+        },
+        {
+          "value": "Lydia Hallie",
+          "correct": false
+        },
+        {
+          "value": "undefined undefined",
+          "correct": false
+        }
+      ],
+      "id": 11
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 3,
+      "code": "function Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst lydia = new Person('Lydia', 'Hallie');\nconst sarah = Person('Sarah', 'Smith');\n\nconsole.log(lydia);\nconsole.log(sarah);",
+      "description": "For sarah, we didn't use the new keyword. When using new, this refers to the new empty object we create. However, if you don't add new, this refers to the global object!\n\nWe said that this.firstName equals \"Sarah\" and this.lastName equals \"Smith\". What we actually did, is defining global.firstName = 'Sarah' and global.lastName = 'Smith'. sarah itself is left undefined, since we don't return a value from the Person function.",
+      "options": [
+        {
+          "value": "Person {firstName: \"Lydia\", lastName: \"Hallie\"} and undefined",
+          "correct": true
+        },
+        {
+          "value": "Person {firstName: \"Lydia\", lastName: \"Hallie\"} and Person {firstName: \"Sarah\", lastName: \"Smith\"}",
+          "correct": false
+        },
+        {
+          "value": "Person {firstName: \"Lydia\", lastName: \"Hallie\"} and {}",
+          "correct": false
+        },
+        {
+          "value": "Person {firstName: \"Lydia\", lastName: \"Hallie\"} and ReferenceError",
+          "correct": false
+        }
+      ],
+      "id": 12
+    },
+    {
+      "title": "What are the three phases of event propagation?",
+      "moduleId": 3,
+      "code": "",
+      "description": "During the capturing phase, the event goes through the ancestor elements down to the target element. It then reaches the target element, and bubbling begins.",
+      "options": [
+        {
+          "value": "Target > Capturing > Bubbling",
+          "correct": false
+        },
+        {
+          "value": "Bubbling > Target > Capturing",
+          "correct": false
+        },
+        {
+          "value": "Target > Bubbling > Capturing",
+          "correct": false
+        },
+        {
+          "value": "Capturing > Target > Bubbling",
+          "correct": true
+        }
+      ],
+      "id": 13
+    },
+    {
+      "title": "All object have prototypes.",
+      "moduleId": 3,
+      "code": "",
+      "description": "All objects have prototypes, except for the base object. The base object is the object created by the user, or an object that is created using the new keyword. The base object has access to some methods and properties, such as .toString. This is the reason why you can use built-in JavaScript methods! All of such methods are available on the prototype. Although JavaScript can't find it directly on your object, it goes down the prototype chain and finds it there, which makes it accessible for you.",
+      "options": [
+        {
+          "value": " true",
+          "correct": false
+        },
+        {
+          "value": "false",
+          "correct": true
+        }
+      ],
+      "id": 14
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 3,
+      "code": "function sum(a, b) {\n  return a + b;\n}\n\nsum(1, '2');",
+      "description": "JavaScript is a dynamically typed language: we don't specify what types certain variables are. Values can automatically be converted into another type without you knowing, which is called implicit type coercion. Coercion is converting from one type into another.\n\nIn this example, JavaScript converts the number 1 into a string, in order for the function to make sense and return a value. During the addition of a numeric type (1) and a string type ('2'), the number is treated as a string. We can concatenate strings like \"Hello\" + \"World\", so what's happening here is \"1\" + \"2\" which returns \"12\".",
+      "options": [
+        {
+          "value": "NaN",
+          "correct": false
+        },
+        {
+          "value": "TypeError",
+          "correct": false
+        },
+        {
+          "value": "\"12\"",
+          "correct": true
+        },
+        {
+          "value": "3",
+          "correct": false
+        }
+      ],
+      "id": 15
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 4,
+      "code": "let number = 0;\nconsole.log(number++);\nconsole.log(++number);\nconsole.log(number);",
+      "description": "The postfix unary operator ++:\n\nReturns the value (this returns 0)\nIncrements the value (number is now 1)\nThe prefix unary operator ++:\n\nIncrements the value (number is now 2)\nReturns the value (this returns 2)\nThis returns 0 2 2.",
+      "options": [
+        {
+          "value": "1 1 2",
+          "correct": false
+        },
+        {
+          "value": "1 2 2",
+          "correct": false
+        },
+        {
+          "value": "0 2 2",
+          "correct": true
+        },
+        {
+          "value": "0 1 2",
+          "correct": false
+        }
+      ],
+      "id": 16
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 4,
+      "code": "function getPersonInfo(one, two, three) {\n  console.log(one);\n  console.log(two);\n  console.log(three);\n}\n\nconst person = 'Lydia';\nconst age = 21;\n\ngetPersonInfo`${person} is ${age} years old`;",
+      "description": "If you use tagged template literals, the value of the first argument is always an array of the string values. The remaining arguments get the values of the passed expressions!",
+      "options": [
+        {
+          "value": "\"Lydia\" 21 [\"\", \" is \", \" years old\"]",
+          "correct": false
+        },
+        {
+          "value": "[\"\", \" is \", \" years old\"] \"Lydia\" 21",
+          "correct": true
+        },
+        {
+          "value": "\"Lydia\" [\"\", \" is \", \" years old\"] 21",
+          "correct": false
+        }
+      ],
+      "id": 17
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 4,
+      "code": "function checkAge(data) {\n  if (data === { age: 18 }) {\n    console.log('You are an adult!');\n  } else if (data == { age: 18 }) {\n    console.log('You are still an adult.');\n  } else {\n    console.log(`Hmm.. You don't have an age I guess`);\n  }\n}\n\ncheckAge({ age: 18 });",
+      "description": "When testing equality, primitives are compared by their value, while objects are compared by their reference. JavaScript checks if the objects have a reference to the same location in memory.\n\nThe two objects that we are comparing don't have that: the object we passed as a parameter refers to a different location in memory than the object we used in order to check equality.\n\nThis is why both { age: 18 } === { age: 18 } and { age: 18 } == { age: 18 } return false.",
+      "options": [
+        {
+          "value": "You are an adult!",
+          "correct": false
+        },
+        {
+          "value": "You are still an adult.",
+          "correct": false
+        },
+        {
+          "value": "Hmm.. You don't have an age I guess",
+          "correct": true
+        }
+      ],
+      "id": 18
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 4,
+      "code": "function getAge(...args) {\n  console.log(typeof args);\n}\n\ngetAge(21);",
+      "description": "The rest parameter (...args) lets us \"collect\" all remaining arguments into an array. An array is an object, so typeof args returns \"object\"",
+      "options": [
+        {
+          "value": "\"number\"",
+          "correct": false
+        },
+        {
+          "value": "\"array\"",
+          "correct": false
+        },
+        {
+          "value": "\"object\"",
+          "correct": true
+        },
+        {
+          "value": "\"NaN\"",
+          "correct": false
+        }
+      ],
+      "id": 19
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 4,
+      "code": "function getAge() {\n  'use strict';\n  age = 21;\n  console.log(age);\n}\n\ngetAge();",
+      "description": "With \"use strict\", you can make sure that you don't accidentally declare global variables. We never declared the variable age, and since we use \"use strict\", it will throw a reference error. If we didn't use \"use strict\", it would have worked, since the property age would have gotten added to the global object.",
+      "options": [
+        {
+          "value": "21",
+          "correct": false
+        },
+        {
+          "value": "undefined",
+          "correct": false
+        },
+        {
+          "value": "ReferenceError",
+          "correct": true
+        },
+        {
+          "value": "TypeError",
+          "correct": false
+        }
+      ],
+      "id": 20
+    },
+    {
+      "title": "What's the value of sum?",
+      "moduleId": 5,
+      "code": "const sum = eval('10*10+5');",
+      "description": "eval evaluates codes that's passed as a string. If it's an expression, like in this case, it evaluates the expression. The expression is 10 * 10 + 5. This returns the number 105",
+      "options": [
+        {
+          "value": "105",
+          "correct": true
+        },
+        {
+          "value": "\"105\"",
+          "correct": false
+        },
+        {
+          "value": "TypeError",
+          "correct": false
+        },
+        {
+          "value": "\"10*10+5\"",
+          "correct": false
+        }
+      ],
+      "id": 21
+    },
+    {
+      "title": "How long is cool_secret accessible?",
+      "moduleId": 5,
+      "code": "sessionStorage.setItem('cool_secret', 123);",
+      "description": "The data stored in sessionStorage is removed after closing the tab.\n\nIf you used localStorage, the data would've been there forever, unless for example localStorage.clear() is invoked.",
+      "options": [
+        {
+          "value": "Forever, the data doesn't get lost.",
+          "correct": false
+        },
+        {
+          "value": "When the user closes the tab.",
+          "correct": true
+        },
+        {
+          "value": "When the user closes the entire browser, not only the tab.",
+          "correct": false
+        },
+        {
+          "value": "When the user shuts off their computer.",
+          "correct": false
+        }
+      ],
+      "id": 22
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 5,
+      "code": "var num = 8;\nvar num = 10;\n\nconsole.log(num);",
+      "description": "With the var keyword, you can declare multiple variables with the same name. The variable will then hold the latest value.\n\nYou cannot do this with let or const since they're block-scoped.",
+      "options": [
+        {
+          "value": "8",
+          "correct": false
+        },
+        {
+          "value": "10",
+          "correct": true
+        },
+        {
+          "value": "SyntaxError",
+          "correct": false
+        },
+        {
+          "value": "ReferenceError",
+          "correct": false
+        }
+      ],
+      "id": 23
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 5,
+      "code": "const obj = { 1: 'a', 2: 'b', 3: 'c' };\nconst set = new Set([1, 2, 3, 4, 5]);\n\nobj.hasOwnProperty('1');\nobj.hasOwnProperty(1);\nset.has('1');\nset.has(1);",
+      "description": "All object keys (excluding Symbols) are strings under the hood, even if you don't type it yourself as a string. This is why obj.hasOwnProperty('1') also returns true.\n\nIt doesn't work that way for a set. There is no '1' in our set: set.has('1') returns false. It has the numeric type 1, set.has(1) returns true.",
+      "options": [
+        {
+          "value": "false true false true",
+          "correct": false
+        },
+        {
+          "value": "false true true true",
+          "correct": false
+        },
+        {
+          "value": "true true false true",
+          "correct": true
+        },
+        {
+          "value": "true true true true",
+          "correct": false
+        }
+      ],
+      "id": 24
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 5,
+      "code": "const obj = { a: 'one', b: 'two', a: 'three' };\nconsole.log(obj);",
+      "description": "If you have two keys with the same name, the key will be replaced. It will still be in its first position, but with the last specified value.",
+      "options": [
+        {
+          "value": "{ a: \"one\", b: \"two\" }",
+          "correct": false
+        },
+        {
+          "value": "{ b: \"two\", a: \"three\" }",
+          "correct": false
+        },
+        {
+          "value": "{ a: \"three\", b: \"two\" }",
+          "correct": true
+        },
+        {
+          "value": "SyntaxError",
+          "correct": false
+        }
+      ],
+      "id": 25
+    },
+    {
+      "title": "The JavaScript global execution context creates two things for you: the global object, and the \"this\" keyword.",
+      "moduleId": 6,
+      "code": "",
+      "description": "The base execution context is the global execution context: it's what's accessible everywhere in your code.",
+      "options": [
+        {
+          "value": "true",
+          "correct": true
+        },
+        {
+          "value": "false",
+          "correct": false
+        },
+        {
+          "value": "it depends",
+          "correct": false
+        }
+      ],
+      "id": 26
+    },
+    {
+      "title": " What's the output?",
+      "moduleId": 6,
+      "code": "for (let i = 1; i < 5; i++) {\n  if (i === 3) continue;\n  console.log(i);\n}",
+      "description": "The continue statement skips an iteration if a certain condition returns true.",
+      "options": [
+        {
+          "value": "1 2",
+          "correct": false
+        },
+        {
+          "value": "1 2 3",
+          "correct": false
+        },
+        {
+          "value": "1 2 4",
+          "correct": true
+        },
+        {
+          "value": "1 3 4",
+          "correct": false
+        }
+      ],
+      "id": 27
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 6,
+      "code": "String.prototype.giveLydiaPizza = () => {\n  return 'Just give Lydia pizza already!';\n};\n\nconst name = 'Lydia';\n\nconsole.log(name.giveLydiaPizza())",
+      "description": "String is a built-in constructor, which we can add properties to. I just added a method to its prototype. Primitive strings are automatically converted into a string object, generated by the string prototype function. So, all strings (string objects) have access to that method!",
+      "options": [
+        {
+          "value": "\"Just give Lydia pizza already!\"",
+          "correct": true
+        },
+        {
+          "value": "TypeError: not a function",
+          "correct": false
+        },
+        {
+          "value": "SyntaxError",
+          "correct": false
+        },
+        {
+          "value": "undefined",
+          "correct": false
+        }
+      ],
+      "id": 28
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 6,
+      "code": "const a = {};\nconst b = { key: 'b' };\nconst c = { key: 'c' };\n\na[b] = 123;\na[c] = 456;\n\nconsole.log(a[b]);",
+      "description": "Object keys are automatically converted into strings. We are trying to set an object as a key to object a, with the value of 123.\n\nHowever, when we stringify an object, it becomes \"[object Object]\". So what we are saying here, is that a[\"[object Object]\"] = 123. Then, we can try to do the same again. c is another object that we are implicitly stringifying. So then, a[\"[object Object]\"] = 456.\n\nThen, we log a[b], which is actually a[\"[object Object]\"]. We just set that to 456, so it returns 456.",
+      "options": [
+        {
+          "value": "123",
+          "correct": false
+        },
+        {
+          "value": "456",
+          "correct": true
+        },
+        {
+          "value": "undefined",
+          "correct": false
+        },
+        {
+          "value": "ReferenceError",
+          "correct": false
+        }
+      ],
+      "id": 29
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 6,
+      "code": "const foo = () => console.log('First');\nconst bar = () => setTimeout(() => console.log('Second'));\nconst baz = () => console.log('Third');\n\nbar();\nfoo();\nbaz();",
+      "description": "We have a setTimeout function and invoked it first. Yet, it was logged last.\n\nThis is because in browsers, we don't just have the runtime engine, we also have something called a WebAPI. The WebAPI gives us the setTimeout function to start with, and for example the DOM.\n\nAfter the callback is pushed to the WebAPI, the setTimeout function itself (but not the callback!) is popped off the stack.\n\nNow, foo gets invoked, and \"First\" is being logged.\n\nfoo is popped off the stack, and baz gets invoked. \"Third\" gets logged.\n\nThe WebAPI can't just add stuff to the stack whenever it's ready. Instead, it pushes the callback function to something called the queue.\n\nThis is where an event loop starts to work. An event loop looks at the stack and task queue. If the stack is empty, it takes the first thing on the queue and pushes it onto the stack.\n\nbar gets invoked, \"Second\" gets logged, and it's popped off the stack.\n\n***** https://github.com/lydiahallie/javascript-questions#11-whats-the-output > Question No: 30",
+      "options": [
+        {
+          "value": "First Second Third",
+          "correct": false
+        },
+        {
+          "value": "First Third Second",
+          "correct": true
+        },
+        {
+          "value": "Second First Third",
+          "correct": false
+        },
+        {
+          "value": "Second Third First",
+          "correct": false
+        }
+      ],
+      "id": 30
+    },
+    {
+      "title": "What is the event.target when clicking the button?",
+      "moduleId": 7,
+      "code": "<div onclick=\"console.log('first div')\">\n  <div onclick=\"console.log('second div')\">\n    <button onclick=\"console.log('button')\">\n      Click!\n    </button>\n  </div>\n</div>",
+      "description": "The deepest nested element that caused the event is the target of the event. You can stop bubbling by event.stopPropagation",
+      "options": [
+        {
+          "value": "Outer div",
+          "correct": false
+        },
+        {
+          "value": "Inner div",
+          "correct": false
+        },
+        {
+          "value": "button",
+          "correct": true
+        },
+        {
+          "value": "An array of all nested elements.",
+          "correct": false
+        }
+      ],
+      "id": 31
+    },
+    {
+      "title": "When you click the paragraph, what's the logged output?",
+      "moduleId": 7,
+      "code": "<div onclick=\"console.log('div')\">\n  <p onclick=\"console.log('p')\">\n    Click here!\n  </p>\n</div>",
+      "description": "If we click p, we see two logs: p and div. During event propagation, there are 3 phases: capturing, target, and bubbling. By default, event handlers are executed in the bubbling phase (unless you set useCapture to true). It goes from the deepest nested element outwards.",
+      "options": [
+        {
+          "value": "p div",
+          "correct": true
+        },
+        {
+          "value": "div p",
+          "correct": false
+        },
+        {
+          "value": "p",
+          "correct": false
+        },
+        {
+          "value": "div",
+          "correct": false
+        }
+      ],
+      "id": 32
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 7,
+      "code": "const person = { name: 'Lydia' };\n\nfunction sayHi(age) {\n  return `${this.name} is ${age}`;\n}\n\nconsole.log(sayHi.call(person, 21));\nconsole.log(sayHi.bind(person, 21));",
+      "description": "With both, we can pass the object to which we want the this keyword to refer to. However, .call is also executed immediately!\n\n.bind. returns a copy of the function, but with a bound context! It is not executed immediately.",
+      "options": [
+        {
+          "value": "undefined is 21 Lydia is 21",
+          "correct": false
+        },
+        {
+          "value": "function function",
+          "correct": false
+        },
+        {
+          "value": "Lydia is 21 Lydia is 21",
+          "correct": false
+        },
+        {
+          "value": "Lydia is 21 function",
+          "correct": true
+        }
+      ],
+      "id": 33
+    },
+    {
+      "title": " What's the output?",
+      "moduleId": 7,
+      "code": "function sayHi() {\n  return (() => 0)();\n}\n\nconsole.log(typeof sayHi());",
+      "description": "The sayHi function returns the returned value of the immediately invoked function expression (IIFE). This function returned 0, which is type \"number\".\n\nFYI: typeof can return the following list of values: undefined, boolean, number, bigint, string, symbol, function and object. Note that typeof null returns \"object\".",
+      "options": [
+        {
+          "value": "\"object\"",
+          "correct": false
+        },
+        {
+          "value": "\"number\"",
+          "correct": true
+        },
+        {
+          "value": "\"function\"",
+          "correct": false
+        },
+        {
+          "value": "\"undefined\"",
+          "correct": false
+        }
+      ],
+      "id": 34
+    },
+    {
+      "title": "Which of these values are falsy?",
+      "moduleId": 7,
+      "code": "0;\nnew Number(0);\n('');\n(' ');\nnew Boolean(false);\nundefined;",
+      "description": "There are 8 falsy values:\n\nundefined\nnull\nNaN\nfalse\n'' (empty string)\n0\n-0\n0n (BigInt(0))\nFunction constructors, like new Number and new Boolean are truthy.",
+      "options": [
+        {
+          "value": "0, '', undefined",
+          "correct": true
+        },
+        {
+          "value": "0, new Number(0), '', new Boolean(false), undefined",
+          "correct": false
+        },
+        {
+          "value": "0, '', new Boolean(false), undefined",
+          "correct": false
+        },
+        {
+          "value": "All of them are falsy",
+          "correct": false
+        }
+      ],
+      "id": 35
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 8,
+      "code": "console.log(typeof typeof 1);",
+      "description": "typeof 1 returns \"number\". typeof \"number\" returns \"string\"",
+      "options": [
+        {
+          "value": "\"number\"",
+          "correct": false
+        },
+        {
+          "value": "\"string\"",
+          "correct": true
+        },
+        {
+          "value": "\"object\"",
+          "correct": false
+        },
+        {
+          "value": "\"undefined\"",
+          "correct": false
+        }
+      ],
+      "id": 36
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 8,
+      "code": "const numbers = [1, 2, 3];\nnumbers[10] = 11;\nconsole.log(numbers);",
+      "description": "When you set a value to an element in an array that exceeds the length of the array, JavaScript creates something called \"empty slots\". These actually have the value of undefined, but you will see something like:\n\n[1, 2, 3, empty x 7, 11]\n\ndepending on where you run it (it's different for every browser, node, etc.)",
+      "options": [
+        {
+          "value": "[1, 2, 3, null x 7, 11]",
+          "correct": false
+        },
+        {
+          "value": "[1, 2, 3, 11]",
+          "correct": false
+        },
+        {
+          "value": "[1, 2, 3, empty x 7, 11]",
+          "correct": true
+        },
+        {
+          "value": "SyntaxError",
+          "correct": false
+        }
+      ],
+      "id": 37
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 8,
+      "code": "(() => {\n  let x, y;\n  try {\n    throw new Error();\n  } catch (x) {\n    (x = 1), (y = 2);\n    console.log(x);\n  }\n  console.log(x);\n  console.log(y);\n})();",
+      "description": "The catch block receives the argument x. This is not the same x as the variable when we pass arguments. This variable x is block-scoped.\n\nLater, we set this block-scoped variable equal to 1, and set the value of the variable y. Now, we log the block-scoped variable x, which is equal to 1.\n\nOutside of the catch block, x is still undefined, and y is 2. When we want to console.log(x) outside of the catch block, it returns undefined, and y returns 2.",
+      "options": [
+        {
+          "value": "1 undefined 2",
+          "correct": true
+        },
+        {
+          "value": "undefined undefined undefined",
+          "correct": false
+        },
+        {
+          "value": "1 1 2",
+          "correct": false
+        },
+        {
+          "value": "1 undefined undefine",
+          "correct": false
+        }
+      ],
+      "id": 38
+    },
+    {
+      "title": "Everything in JavaScript is either a...",
+      "moduleId": 8,
+      "code": "",
+      "description": "JavaScript only has primitive types and objects.\n\nPrimitive types are boolean, null, undefined, bigint, number, string, and symbol.\n\nWhat differentiates a primitive from an object is that primitives do not have any properties or methods; however, you'll note that 'foo'.toUpperCase() evaluates to 'FOO' and does not result in a TypeError. This is because when you try to access a property or method on a primitive like a string, JavaScript will implicitly wrap the primitive type using one of the wrapper classes, i.e. String, and then immediately discard the wrapper after the expression evaluates. All primitives except for null and undefined exhibit this behaviour.",
+      "options": [
+        {
+          "value": "primitive or object",
+          "correct": true
+        },
+        {
+          "value": "function or object",
+          "correct": false
+        },
+        {
+          "value": "trick question! only objects",
+          "correct": false
+        },
+        {
+          "value": "number or object",
+          "correct": false
+        }
+      ],
+      "id": 39
+    },
+    {
+      "title": " What's the output?",
+      "moduleId": 8,
+      "code": "[[0, 1], [2, 3]].reduce(\n  (acc, cur) => {\n    return acc.concat(cur);\n  },\n  [1, 2],\n);",
+      "description": "[1, 2] is our initial value. This is the value we start with, and the value of the very first acc. During the first round, acc is [1,2], and cur is [0, 1]. We concatenate them, which results in [1, 2, 0, 1].\n\nThen, [1, 2, 0, 1] is acc and [2, 3] is cur. We concatenate them, and get [1, 2, 0, 1, 2, 3]",
+      "options": [
+        {
+          "value": "[0, 1, 2, 3, 1, 2]",
+          "correct": false
+        },
+        {
+          "value": "[6, 1, 2]",
+          "correct": false
+        },
+        {
+          "value": "[1, 2, 0, 1, 2, 3]",
+          "correct": true
+        },
+        {
+          "value": "[1, 2, 6]",
+          "correct": false
+        }
+      ],
+      "id": 40
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 9,
+      "code": "!!null;\n!!'';\n!!1;",
+      "description": "null is falsy. !null returns true. !true returns false.\n\n\"\" is falsy. !\"\" returns true. !true returns false.\n\n1 is truthy. !1 returns false. !false returns true.",
+      "options": [
+        {
+          "value": "false true false",
+          "correct": false
+        },
+        {
+          "value": "false false true",
+          "correct": true
+        },
+        {
+          "value": "false true true",
+          "correct": false
+        },
+        {
+          "value": "true true false",
+          "correct": false
+        }
+      ],
+      "id": 41
+    },
+    {
+      "title": "What does the setInterval method return in the browser?",
+      "moduleId": 9,
+      "code": "setInterval(() => console.log('Hi'), 1000);",
+      "description": "It returns a unique id. This id can be used to clear that interval with the clearInterval() function.",
+      "options": [
+        {
+          "value": "a unique id",
+          "correct": true
+        },
+        {
+          "value": "the amount of milliseconds specified",
+          "correct": false
+        },
+        {
+          "value": "the passed function",
+          "correct": false
+        },
+        {
+          "value": "undefined",
+          "correct": false
+        }
+      ],
+      "id": 42
+    },
+    {
+      "title": "What does this return?",
+      "moduleId": 9,
+      "code": "[...'Lydia'];",
+      "description": "A string is an iterable. The spread operator maps every character of an iterable to one element.",
+      "options": [
+        {
+          "value": "[\"L\", \"y\", \"d\", \"i\", \"a\"]",
+          "correct": true
+        },
+        {
+          "value": "[\"Lydia\"]",
+          "correct": false
+        },
+        {
+          "value": "[[], \"Lydia\"]",
+          "correct": false
+        },
+        {
+          "value": "[[\"L\", \"y\", \"d\", \"i\", \"a\"]]",
+          "correct": false
+        }
+      ],
+      "id": 43
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 9,
+      "code": "function* generator(i) {\n  yield i;\n  yield i * 2;\n}\n\nconst gen = generator(10);\n\nconsole.log(gen.next().value);\nconsole.log(gen.next().value);",
+      "description": "Regular functions cannot be stopped mid-way after invocation. However, a generator function can be \"stopped\" midway, and later continue from where it stopped. Every time a generator function encounters a yield keyword, the function yields the value specified after it. Note that the generator function in that case doesn’t return the value, it yields the value.\n\nFirst, we initialize the generator function with i equal to 10. We invoke the generator function using the next() method. The first time we invoke the generator function, i is equal to 10. It encounters the first yield keyword: it yields the value of i. The generator is now \"paused\", and 10 gets logged.\n\nThen, we invoke the function again with the next() method. It starts to continue where it stopped previously, still with i equal to 10. Now, it encounters the next yield keyword, and yields i * 2. i is equal to 10, so it returns 10 * 2, which is 20. This results in 10, 20.",
+      "options": [
+        {
+          "value": "[0, 10], [10, 20]",
+          "correct": false
+        },
+        {
+          "value": "20, 20",
+          "correct": false
+        },
+        {
+          "value": "10, 20",
+          "correct": true
+        },
+        {
+          "value": "0, 10 and 10, 20",
+          "correct": false
+        }
+      ],
+      "id": 44
+    },
+    {
+      "title": "What does this return?",
+      "moduleId": 9,
+      "code": "const firstPromise = new Promise((res, rej) => {\n  setTimeout(res, 500, 'one');\n});\n\nconst secondPromise = new Promise((res, rej) => {\n  setTimeout(res, 100, 'two');\n});\n\nPromise.race([firstPromise, secondPromise]).then(res => console.log(res));",
+      "description": "When we pass multiple promises to the Promise.race method, it resolves/rejects the first promise that resolves/rejects. To the setTimeout method, we pass a timer: 500ms for the first promise (firstPromise), and 100ms for the second promise (secondPromise). This means that the secondPromise resolves first with the value of 'two'. res now holds the value of 'two', which gets logged.",
+      "options": [
+        {
+          "value": "\"one\"",
+          "correct": false
+        },
+        {
+          "value": "\"two\"",
+          "correct": true
+        },
+        {
+          "value": "\"two\" \"one\"",
+          "correct": false
+        },
+        {
+          "value": "\"one\" \"two\"",
+          "correct": false
+        }
+      ],
+      "id": 45
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 10,
+      "code": "let person = { name: 'Lydia' };\nconst members = [person];\nperson = null;\n\nconsole.log(members);",
+      "description": "First, we declare a variable person with the value of an object that has a name property.\n\nThen, we declare a variable called members. We set the first element of that array equal to the value of the person variable. Objects interact by reference when setting them equal to each other. When you assign a reference from one variable to another, you make a copy of that reference. (note that they don't have the same reference!)\n\nThen, we set the variable person equal to null.\n\nWe are only modifying the value of the person variable, and not the first element in the array, since that element has a different (copied) reference to the object. The first element in members still holds its reference to the original object. When we log the members array, the first element still holds the value of the object, which gets logged.",
+      "options": [
+        {
+          "value": "null",
+          "correct": false
+        },
+        {
+          "value": "[null]",
+          "correct": false
+        },
+        {
+          "value": "[{}]",
+          "correct": false
+        },
+        {
+          "value": "[{ name: \"Lydia\" }]",
+          "correct": true
+        }
+      ],
+      "id": 46
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 10,
+      "code": "const person = {\n  name: 'Lydia',\n  age: 21,\n};\n\nfor (const item in person) {\n  console.log(item);\n}",
+      "description": "With a for-in loop, we can iterate through object keys, in this case name and age. Under the hood, object keys are strings (if they're not a Symbol). On every loop, we set the value of item equal to the current key it’s iterating over. First, item is equal to name, and gets logged. Then, item is equal to age, which gets logged.",
+      "options": [
+        {
+          "value": "{ name: \"Lydia\" }, { age: 21 }",
+          "correct": false
+        },
+        {
+          "value": "\"name\", \"age\"",
+          "correct": true
+        },
+        {
+          "value": "\"Lydia\", 21",
+          "correct": false
+        },
+        {
+          "value": "[\"name\", \"Lydia\"], [\"age\", 21]",
+          "correct": false
+        }
+      ],
+      "id": 47
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 10,
+      "code": "console.log(3 + 4 + '5');",
+      "description": "Operator associativity is the order in which the compiler evaluates the expressions, either left-to-right or right-to-left. This only happens if all operators have the same precedence. We only have one type of operator: +. For addition, the associativity is left-to-right.\n\n3 + 4 gets evaluated first. This results in the number 7.\n\n7 + '5' results in \"75\" because of coercion. JavaScript converts the number 7 into a string, see question 15. We can concatenate two strings using the +operator. \"7\" + \"5\" results in \"75\".",
+      "options": [
+        {
+          "value": "\"345\"",
+          "correct": false
+        },
+        {
+          "value": "\"75\"",
+          "correct": true
+        },
+        {
+          "value": "12",
+          "correct": false
+        },
+        {
+          "value": "\"12\"",
+          "correct": false
+        }
+      ],
+      "id": 48
+    },
+    {
+      "title": "What's the value of num?",
+      "moduleId": 10,
+      "code": "const num = parseInt('7*6', 10);",
+      "description": "Only the first numbers in the string is returned. Based on the radix (the second argument in order to specify what type of number we want to parse it to: base 10, hexadecimal, octal, binary, etc.), the parseInt checks whether the characters in the string are valid. Once it encounters a character that isn't a valid number in the radix, it stops parsing and ignores the following characters.\n\n* is not a valid number. It only parses \"7\" into the decimal 7. num now holds the value of 7.",
+      "options": [
+        {
+          "value": "42",
+          "correct": false
+        },
+        {
+          "value": "\"42\"",
+          "correct": false
+        },
+        {
+          "value": "7",
+          "correct": true
+        },
+        {
+          "value": "NaN",
+          "correct": false
+        }
+      ],
+      "id": 49
+    },
+    {
+      "title": " What's the output?",
+      "moduleId": 10,
+      "code": "[1, 2, 3].map(num => {\n  if (typeof num === 'number') return;\n  return num * 2;\n});",
+      "description": "When mapping over the array, the value of num is equal to the element it’s currently looping over. In this case, the elements are numbers, so the condition of the if statement typeof num === \"number\" returns true. The map function creates a new array and inserts the values returned from the function.\n\nHowever, we don’t return a value. When we don’t return a value from the function, the function returns undefined. For every element in the array, the function block gets called, so for each element we return undefined.",
+      "options": [
+        {
+          "value": "[]",
+          "correct": false
+        },
+        {
+          "value": "[null, null, null]",
+          "correct": false
+        },
+        {
+          "value": "[undefined, undefined, undefined]",
+          "correct": true
+        },
+        {
+          "value": "[ 3 x empty ]",
+          "correct": false
+        }
+      ],
+      "id": 50
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 11,
+      "code": "function getInfo(member, year) {\n  member.name = 'Lydia';\n  year = '1998';\n}\n\nconst person = { name: 'Sarah' };\nconst birthYear = '1997';\n\ngetInfo(person, birthYear);\n\nconsole.log(person, birthYear);",
+      "description": "Arguments are passed by value, unless their value is an object, then they're passed by reference. birthYear is passed by value, since it's a string, not an object. When we pass arguments by value, a copy of that value is created (see question 46).\n\nThe variable birthYear has a reference to the value \"1997\". The argument year also has a reference to the value \"1997\", but it's not the same value as birthYear has a reference to. When we update the value of year by setting year equal to \"1998\", we are only updating the value of year. birthYear is still equal to \"1997\".\n\nThe value of person is an object. The argument member has a (copied) reference to the same object. When we modify a property of the object member has a reference to, the value of person will also be modified, since they both have a reference to the same object. person's name property is now equal to the value \"Lydia\"",
+      "options": [
+        {
+          "value": "{ name: \"Lydia\" }, \"1997\"",
+          "correct": true
+        },
+        {
+          "value": "{ name: \"Sarah\" }, \"1998\"",
+          "correct": false
+        },
+        {
+          "value": "{ name: \"Lydia\" }, \"1998\"",
+          "correct": false
+        },
+        {
+          "value": "{ name: \"Sarah\" }, \"1997\"",
+          "correct": false
+        }
+      ],
+      "id": 51
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 11,
+      "code": "function greeting() {\n  throw 'Hello world!';\n}\n\nfunction sayHi() {\n  try {\n    const data = greeting();\n    console.log('It worked!', data);\n  } catch (e) {\n    console.log('Oh no an error:', e);\n  }\n}\n\nsayHi();",
+      "description": "With the throw statement, we can create custom errors. With this statement, you can throw exceptions. An exception can be a string, a number, a boolean or an object. In this case, our exception is the string 'Hello world!'.\n\nWith the catch statement, we can specify what to do if an exception is thrown in the try block. An exception is thrown: the string 'Hello world!'. e is now equal to that string, which we log. This results in 'Oh an error: Hello world!'.",
+      "options": [
+        {
+          "value": "It worked! Hello world!",
+          "correct": false
+        },
+        {
+          "value": "Oh no an error: undefined",
+          "correct": false
+        },
+        {
+          "value": "SyntaxError: can only throw Error objects",
+          "correct": false
+        },
+        {
+          "value": "Oh no an error: Hello world!",
+          "correct": true
+        }
+      ],
+      "id": 52
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 11,
+      "code": "function Car() {\n  this.make = 'Lamborghini';\n  return { make: 'Maserati' };\n}\n\nconst myCar = new Car();\nconsole.log(myCar.make);",
+      "description": "When you return a property, the value of the property is equal to the returned value, not the value set in the constructor function. We return the string \"Maserati\", so myCar.make is equal to \"Maserati\".",
+      "options": [
+        {
+          "value": "\"Lamborghini\"",
+          "correct": false
+        },
+        {
+          "value": "\"Maserati\"",
+          "correct": true
+        },
+        {
+          "value": "ReferenceError",
+          "correct": false
+        },
+        {
+          "value": "TypeError",
+          "correct": false
+        }
+      ],
+      "id": 53
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 11,
+      "code": "(() => {\n  let x = (y = 10);\n})();\n\nconsole.log(typeof x);\nconsole.log(typeof y);",
+      "description": "let x = (y = 10); is actually shorthand for:\n\ny = 10;\nlet x = y;\n\nWhen we set y equal to 10, we actually add a property y to the global object (window in browser, global in Node). In a browser, window.y is now equal to 10.\n\nThen, we declare a variable x with the value of y, which is 10. Variables declared with the let keyword are block scoped, they are only defined within the block they're declared in; the immediately invoked function expression (IIFE) in this case. When we use the typeof operator, the operand x is not defined: we are trying to access x outside of the block it's declared in. This means that x is not defined. Values who haven't been assigned a value or declared are of type \"undefined\". console.log(typeof x) returns \"undefined\".\n\nHowever, we created a global variable y when setting y equal to 10. This value is accessible anywhere in our code. y is defined, and holds a value of type \"number\". console.log(typeof y) returns \"number\".",
+      "options": [
+        {
+          "value": "\"undefined\", \"number\"",
+          "correct": true
+        },
+        {
+          "value": "\"number\", \"number\"",
+          "correct": false
+        },
+        {
+          "value": "\"object\", \"number\"",
+          "correct": false
+        },
+        {
+          "value": "\"number\", \"undefined\"",
+          "correct": false
+        }
+      ],
+      "id": 54
+    },
+    {
+      "title": "What's the output?",
+      "moduleId": 11,
+      "code": "class Dog {\n  constructor(name) {\n    this.name = name;\n  }\n}\n\nDog.prototype.bark = function() {\n  console.log(`Woof I am ${this.name}`);\n};\n\nconst pet = new Dog('Mara');\n\npet.bark();\n\ndelete Dog.prototype.bark;\n\npet.bark();",
+      "description": "We can delete properties from objects using the delete keyword, also on the prototype. By deleting a property on the prototype, it is not available anymore in the prototype chain. In this case, the bark function is not available anymore on the prototype after delete Dog.prototype.bark, yet we still try to access it.\n\nWhen we try to invoke something that is not a function, a TypeError is thrown. In this case TypeError: pet.bark is not a function, since pet.bark is undefined.",
+      "options": [
+        {
+          "value": "\"Woof I am Mara\", TypeError",
+          "correct": true
+        },
+        {
+          "value": "\"Woof I am Mara\", \"Woof I am Mara\"",
+          "correct": false
+        },
+        {
+          "value": "\"Woof I am Mara\", undefined",
+          "correct": false
+        },
+        {
+          "value": "TypeError, TypeError",
+          "correct": false
+        }
+      ],
+      "id": 55
+    }
+  ],
+  "result": [
+    {
+      "userId": 1,
+      "questionId": 1,
+      "moduleId": 1,
+      "code": "function sayHi() {\n  console.log(name);\n  console.log(age);\n  var name = 'Lydia';\n  let age = 21;\n}\n\nsayHi();",
+      "options": [
+        {
+          "value": "Lydia and undefined"
+        },
+        {
+          "value": "Lydia and ReferenceError"
+        },
+        {
+          "value": "ReferenceError and 21"
+        },
+        {
+          "value": "undefined and ReferenceError",
+          "selected": true
+        }
+      ],
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "questionId": 3,
+      "moduleId": 1,
+      "code": "const shape = {\n  radius: 10,\n  diameter() {\n    return this.radius * 2;\n  },\n  perimeter: () => 2 * Math.PI * this.radius,\n};\n\nconsole.log(shape.diameter());\nconsole.log(shape.perimeter());",
+      "options": [
+        {
+          "value": "20 and 62.83185307179586"
+        },
+        {
+          "value": "20 and NaN",
+          "selected": true
+        },
+        {
+          "value": "20 and 63"
+        },
+        {
+          "value": "NaN and 63"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "questionId": 4,
+      "moduleId": 1,
+      "code": "+true;\n!'Lydia';",
+      "options": [
+        {
+          "value": "1 and false",
+          "selected": true
+        },
+        {
+          "value": "false and NaN"
+        },
+        {
+          "value": "false and false"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "questionId": 2,
+      "moduleId": 1,
+      "code": "for (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1);\n}\n\nfor (let i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1);\n}",
+      "options": [
+        {
+          "value": "0 1 2 and 0 1 2"
+        },
+        {
+          "value": "0 1 2 and 3 3 3"
+        },
+        {
+          "value": "3 3 3 and 0 1 2",
+          "selected": true
+        }
+      ],
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "questionId": 5,
+      "moduleId": 1,
+      "code": "const bird = {\n  size: 'small',\n};\n\nconst mouse = {\n  name: 'Mickey',\n  small: true,\n};",
+      "options": [
+        {
+          "value": "mouse.bird.size is not valid",
+          "selected": true
+        },
+        {
+          "value": "mouse[bird.size] is not valid"
+        },
+        {
+          "value": "mouse[bird[\"size\"]] is not valid"
+        },
+        {
+          "value": "All of them are valid"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "questionId": 11,
+      "moduleId": 3,
+      "code": "function Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst member = new Person('Lydia', 'Hallie');\nPerson.getFullName = function() {\n  return `${this.firstName} ${this.lastName}`;\n};\n\nconsole.log(member.getFullName());",
+      "options": [
+        {
+          "value": "TypeError",
+          "selected": true
+        },
+        {
+          "value": "SyntaxError"
+        },
+        {
+          "value": "Lydia Hallie"
+        },
+        {
+          "value": "undefined undefined"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "questionId": 12,
+      "moduleId": 3,
+      "code": "function Person(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nconst lydia = new Person('Lydia', 'Hallie');\nconst sarah = Person('Sarah', 'Smith');\n\nconsole.log(lydia);\nconsole.log(sarah);",
+      "options": [
+        {
+          "value": "Person {firstName: \"Lydia\", lastName: \"Hallie\"} and undefined",
+          "selected": true
+        },
+        {
+          "value": "Person {firstName: \"Lydia\", lastName: \"Hallie\"} and Person {firstName: \"Sarah\", lastName: \"Smith\"}"
+        },
+        {
+          "value": "Person {firstName: \"Lydia\", lastName: \"Hallie\"} and {}"
+        },
+        {
+          "value": "Person {firstName: \"Lydia\", lastName: \"Hallie\"} and ReferenceError"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "questionId": 13,
+      "moduleId": 3,
+      "code": "",
+      "options": [
+        {
+          "value": "Target > Capturing > Bubbling"
+        },
+        {
+          "value": "Bubbling > Target > Capturing"
+        },
+        {
+          "value": "Target > Bubbling > Capturing"
+        },
+        {
+          "value": "Capturing > Target > Bubbling",
+          "selected": true
+        }
+      ],
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "questionId": 14,
+      "moduleId": 3,
+      "code": "",
+      "options": [
+        {
+          "value": " true"
+        },
+        {
+          "value": "false",
+          "selected": true
+        }
+      ],
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "questionId": 15,
+      "moduleId": 3,
+      "code": "function sum(a, b) {\n  return a + b;\n}\n\nsum(1, '2');",
+      "options": [
+        {
+          "value": "NaN"
+        },
+        {
+          "value": "TypeError"
+        },
+        {
+          "value": "\"12\"",
+          "selected": true
+        },
+        {
+          "value": "3"
+        }
+      ],
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "questionId": 26,
+      "moduleId": 6,
+      "code": "",
+      "options": [
+        {
+          "value": "true",
+          "selected": true
+        },
+        {
+          "value": "false"
+        },
+        {
+          "value": "it depends"
+        }
+      ],
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "questionId": 28,
+      "moduleId": 6,
+      "code": "String.prototype.giveLydiaPizza = () => {\n  return 'Just give Lydia pizza already!';\n};\n\nconst name = 'Lydia';\n\nconsole.log(name.giveLydiaPizza())",
+      "options": [
+        {
+          "value": "\"Just give Lydia pizza already!\""
+        },
+        {
+          "value": "TypeError: not a function",
+          "selected": true
+        },
+        {
+          "value": "SyntaxError"
+        },
+        {
+          "value": "undefined"
+        }
+      ],
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "questionId": 29,
+      "moduleId": 6,
+      "code": "const a = {};\nconst b = { key: 'b' };\nconst c = { key: 'c' };\n\na[b] = 123;\na[c] = 456;\n\nconsole.log(a[b]);",
+      "options": [
+        {
+          "value": "123",
+          "selected": true
+        },
+        {
+          "value": "456"
+        },
+        {
+          "value": "undefined"
+        },
+        {
+          "value": "ReferenceError"
+        }
+      ],
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "questionId": 30,
+      "moduleId": 6,
+      "code": "const foo = () => console.log('First');\nconst bar = () => setTimeout(() => console.log('Second'));\nconst baz = () => console.log('Third');\n\nbar();\nfoo();\nbaz();",
+      "options": [
+        {
+          "value": "First Second Third",
+          "selected": true
+        },
+        {
+          "value": "First Third Second"
+        },
+        {
+          "value": "Second First Third"
+        },
+        {
+          "value": "Second Third First"
+        }
+      ],
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "questionId": 27,
+      "moduleId": 6,
+      "code": "for (let i = 1; i < 5; i++) {\n  if (i === 3) continue;\n  console.log(i);\n}",
+      "options": [
+        {
+          "value": "1 2",
+          "selected": true
+        },
+        {
+          "value": "1 2 3"
+        },
+        {
+          "value": "1 2 4"
+        },
+        {
+          "value": "1 3 4"
+        }
+      ],
+      "id": 15
+    },
+    {
+      "userId": 2,
+      "questionId": 1,
+      "moduleId": 1,
+      "code": "function sayHi() {\n  console.log(name);\n  console.log(age);\n  var name = 'Lydia';\n  let age = 21;\n}\n\nsayHi();",
+      "options": [
+        {
+          "value": "Lydia and undefined",
+          "selected": true
+        },
+        {
+          "value": "Lydia and ReferenceError"
+        },
+        {
+          "value": "ReferenceError and 21"
+        },
+        {
+          "value": "undefined and ReferenceError"
+        }
+      ],
+      "id": 16
+    },
+    {
+      "userId": 2,
+      "questionId": 3,
+      "moduleId": 1,
+      "code": "const shape = {\n  radius: 10,\n  diameter() {\n    return this.radius * 2;\n  },\n  perimeter: () => 2 * Math.PI * this.radius,\n};\n\nconsole.log(shape.diameter());\nconsole.log(shape.perimeter());",
+      "options": [
+        {
+          "value": "20 and 62.83185307179586",
+          "selected": true
+        },
+        {
+          "value": "20 and NaN"
+        },
+        {
+          "value": "20 and 63"
+        },
+        {
+          "value": "NaN and 63"
+        }
+      ],
+      "id": 17
+    },
+    {
+      "userId": 2,
+      "questionId": 4,
+      "moduleId": 1,
+      "code": "+true;\n!'Lydia';",
+      "options": [
+        {
+          "value": "1 and false",
+          "selected": true
+        },
+        {
+          "value": "false and NaN"
+        },
+        {
+          "value": "false and false"
+        }
+      ],
+      "id": 18
+    },
+    {
+      "userId": 2,
+      "questionId": 5,
+      "moduleId": 1,
+      "code": "const bird = {\n  size: 'small',\n};\n\nconst mouse = {\n  name: 'Mickey',\n  small: true,\n};",
+      "options": [
+        {
+          "value": "mouse.bird.size is not valid",
+          "selected": true
+        },
+        {
+          "value": "mouse[bird.size] is not valid"
+        },
+        {
+          "value": "mouse[bird[\"size\"]] is not valid"
+        },
+        {
+          "value": "All of them are valid"
+        }
+      ],
+      "id": 19
+    },
+    {
+      "userId": 2,
+      "questionId": 2,
+      "moduleId": 1,
+      "code": "for (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1);\n}\n\nfor (let i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1);\n}",
+      "options": [
+        {
+          "value": "0 1 2 and 0 1 2",
+          "selected": true
+        },
+        {
+          "value": "0 1 2 and 3 3 3"
+        },
+        {
+          "value": "3 3 3 and 0 1 2"
+        }
+      ],
+      "id": 20
+    },
+    {
+      "userId": 3,
+      "questionId": 1,
+      "moduleId": 1,
+      "code": "function sayHi() {\n  console.log(name);\n  console.log(age);\n  var name = 'Lydia';\n  let age = 21;\n}\n\nsayHi();",
+      "options": [
+        {
+          "value": "Lydia and undefined",
+          "selected": true
+        },
+        {
+          "value": "Lydia and ReferenceError"
+        },
+        {
+          "value": "ReferenceError and 21"
+        },
+        {
+          "value": "undefined and ReferenceError"
+        }
+      ],
+      "id": 21
+    },
+    {
+      "userId": 3,
+      "questionId": 2,
+      "moduleId": 1,
+      "code": "for (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1);\n}\n\nfor (let i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1);\n}",
+      "options": [
+        {
+          "value": "0 1 2 and 0 1 2",
+          "selected": true
+        },
+        {
+          "value": "0 1 2 and 3 3 3"
+        },
+        {
+          "value": "3 3 3 and 0 1 2"
+        }
+      ],
+      "id": 22
+    },
+    {
+      "userId": 3,
+      "questionId": 3,
+      "moduleId": 1,
+      "code": "const shape = {\n  radius: 10,\n  diameter() {\n    return this.radius * 2;\n  },\n  perimeter: () => 2 * Math.PI * this.radius,\n};\n\nconsole.log(shape.diameter());\nconsole.log(shape.perimeter());",
+      "options": [
+        {
+          "value": "20 and 62.83185307179586",
+          "selected": true
+        },
+        {
+          "value": "20 and NaN"
+        },
+        {
+          "value": "20 and 63"
+        },
+        {
+          "value": "NaN and 63"
+        }
+      ],
+      "id": 23
+    },
+    {
+      "userId": 3,
+      "questionId": 4,
+      "moduleId": 1,
+      "code": "+true;\n!'Lydia';",
+      "options": [
+        {
+          "value": "1 and false",
+          "selected": true
+        },
+        {
+          "value": "false and NaN"
+        },
+        {
+          "value": "false and false"
+        }
+      ],
+      "id": 24
+    },
+    {
+      "userId": 3,
+      "questionId": 5,
+      "moduleId": 1,
+      "code": "const bird = {\n  size: 'small',\n};\n\nconst mouse = {\n  name: 'Mickey',\n  small: true,\n};",
+      "options": [
+        {
+          "value": "mouse.bird.size is not valid",
+          "selected": true
+        },
+        {
+          "value": "mouse[bird.size] is not valid"
+        },
+        {
+          "value": "mouse[bird[\"size\"]] is not valid"
+        },
+        {
+          "value": "All of them are valid"
+        }
+      ],
+      "id": 25
+    },
+    {
+      "userId": 4,
+      "questionId": 1,
+      "moduleId": 1,
+      "code": "function sayHi() {\n  console.log(name);\n  console.log(age);\n  var name = 'Lydia';\n  let age = 21;\n}\n\nsayHi();",
+      "options": [
+        {
+          "value": "Lydia and undefined",
+          "selected": true
+        },
+        {
+          "value": "Lydia and ReferenceError"
+        },
+        {
+          "value": "ReferenceError and 21"
+        },
+        {
+          "value": "undefined and ReferenceError"
+        }
+      ],
+      "id": 26
+    },
+    {
+      "userId": 4,
+      "questionId": 5,
+      "moduleId": 1,
+      "code": "const bird = {\n  size: 'small',\n};\n\nconst mouse = {\n  name: 'Mickey',\n  small: true,\n};",
+      "options": [
+        {
+          "value": "mouse.bird.size is not valid",
+          "selected": true
+        },
+        {
+          "value": "mouse[bird.size] is not valid"
+        },
+        {
+          "value": "mouse[bird[\"size\"]] is not valid"
+        },
+        {
+          "value": "All of them are valid"
+        }
+      ],
+      "id": 27
+    },
+    {
+      "userId": 4,
+      "questionId": 2,
+      "moduleId": 1,
+      "code": "for (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1);\n}\n\nfor (let i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 1);\n}",
+      "options": [
+        {
+          "value": "0 1 2 and 0 1 2",
+          "selected": true
+        },
+        {
+          "value": "0 1 2 and 3 3 3"
+        },
+        {
+          "value": "3 3 3 and 0 1 2"
+        }
+      ],
+      "id": 28
+    },
+    {
+      "userId": 4,
+      "questionId": 3,
+      "moduleId": 1,
+      "code": "const shape = {\n  radius: 10,\n  diameter() {\n    return this.radius * 2;\n  },\n  perimeter: () => 2 * Math.PI * this.radius,\n};\n\nconsole.log(shape.diameter());\nconsole.log(shape.perimeter());",
+      "options": [
+        {
+          "value": "20 and 62.83185307179586",
+          "selected": true
+        },
+        {
+          "value": "20 and NaN"
+        },
+        {
+          "value": "20 and 63"
+        },
+        {
+          "value": "NaN and 63"
+        }
+      ],
+      "id": 29
+    },
+    {
+      "userId": 4,
+      "questionId": 4,
+      "moduleId": 1,
+      "code": "+true;\n!'Lydia';",
+      "options": [
+        {
+          "value": "1 and false",
+          "selected": true
+        },
+        {
+          "value": "false and NaN"
+        },
+        {
+          "value": "false and false"
+        }
+      ],
+      "id": 30
+    }
+  ],
+  "ranking": [
+    {
+      "userId": 1,
+      "point": 55,
+      "userName": "Abdul Alim",
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "point": 10,
+      "userName": "One",
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "point": 10,
+      "userName": "reco",
+      "id": 3
+    },
+    {
+      "userId": 4,
+      "point": 10,
+      "userName": "two",
+      "id": 4
+    }
+  ]
+}
